@@ -34,7 +34,7 @@ const Header = () => {
                         }
                 </div>
 
-                <div className={`gap-2 w-60 flex flex-col lg:hidden absolute left-64 text-start text-sm font-semibold bg-purple-50 p-5 ${isOpen ==true ? 'top-16 duration-300': '-top-36 duration-300'}`}>
+                <div className={`gap-2 w-60 flex flex-col lg:hidden absolute left-64 text-start text-sm font-semibold bg-white p-5 ${isOpen ==true ? 'top-16 duration-300': '-top-36 duration-300'}`}>
                 <h5>Home</h5>
                     <h5>Statistics</h5>
                     <h5>Applied Jobs</h5>
