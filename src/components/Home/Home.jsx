@@ -1,9 +1,14 @@
 import React from 'react';
 import Img from '../../assets/All Images/P3OLGJ1 copy 1.png'
+import { useLoaderData } from 'react-router-dom';
+import Categorycard from '../CategoryCard/Categorycard';
 
 const Home = () => {
+    const data = useLoaderData()
+    
     return (
         <div>
+            {/* banner section */}
             <section className=' bg-purple-50'>
                 <div className='md:flex justify-between items-center w-4/5 mx-auto'>
                 <div className='md:w-[50%] p-5 flex flex-col justify-start'>
@@ -16,6 +21,16 @@ const Home = () => {
                 <div className='md:w-1/2'>
                    <img src={Img}alt="" />
                 </div>
+                </div>
+            </section>
+            {/*Job Category List section  */}
+            <section className='mt-36'>
+                <h4 className='text-2xl md:text-3xl font-semibold mb-10'>Job Category List</h4>
+                <p className='text-sm text-gray-400'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <div className='grid grid-cols-1 md:grid-cols-4 w-4/5 mx-auto mt-10  gap-5'>
+                {
+                    data.map(infos => <Categorycard  key={infos.id} infos={infos}/>)
+                }
                 </div>
             </section>
         </div>
