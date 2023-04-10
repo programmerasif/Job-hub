@@ -24,14 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch(`jobcirculer.json`)
+        loader: () => fetch(`/jobcirculer.json`)
       },
       {
         path: 'jobDetils/:detilId',
         element: <JobDetils />,
-        loader: ({params}) => {
+        loader: () => {
           
-          const data = fetch(`jobcirculer.json`);
+          const data = fetch(`/jobcirculer.json`);
           
           return data
 
@@ -40,7 +40,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'statistics',
-        element: <Statistics />
+        element: <Statistics />,
+        
       },
       {
         path: 'appliedJobs',
