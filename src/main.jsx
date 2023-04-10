@@ -12,6 +12,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Statistics from './components/Statistics/Statistics';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blog from './components/Blog/Blog';
+import JobCatagoriCard from './components/JobCatagoriCard/JobCatagoriCard';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch(`jobCatagory.json`)
+        loader: () => fetch(`jobcirculer.json`)
       },
       {
         path: '/statistics',
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: '/blog',
         element: <Blog />
         
+      },
+      {
+        path: '/JobCatagoriCard',
+        element: <JobCatagoriCard />
       }
     ],
   },

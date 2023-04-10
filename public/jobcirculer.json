@@ -1,0 +1,79 @@
+[
+    {
+      "id": 1,
+      "company": "Google",
+      "position": "Frontend Developer",
+      "experience": "2-4 years",
+      "location": "New York City",
+      "salary": "$80,000 - $100,000",
+      "applyBy": "May 1, 2023",
+      "jobType": "Full-time",
+      "isRemote": false,
+      "companyLogo": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+      "jobDescription": "We are looking for a talented frontend developer to join our team in New York City. The ideal candidate will have 2-4 years of experience in developing complex web applications using modern frontend technologies such as React, Angular or Vue.js. In this role, you will be responsible for developing and maintaining the user interface of our products, collaborating with designers and backend developers to deliver high-quality software solutions that meet our customers' needs."
+    },
+    {
+      "id": 2,
+      "company": "Netflix",
+      "position": "Backend Developer",
+      "experience": "4-6 years",
+      "location": "San Francisco",
+      "salary": "$100,000 - $120,000",
+      "applyBy": "May 15, 2023",
+      "jobType": "Remote",
+      "isRemote": true,
+      "companyLogo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.png",
+      "jobDescription": "We are looking for a talented backend developer to join our remote team. The ideal candidate will have 4-6 years of experience in developing scalable and fault-tolerant backend systems using modern technologies such as Node.js, Java or Go. In this role, you will be responsible for designing and implementing RESTful APIs, integrating with third-party services and databases, and optimizing the performance and reliability of our backend infrastructure."
+    },
+    {
+      "id": 3,
+      "company": "Facebook",
+      "position": "UX/UI Designer",
+      "experience": "2-4 years",
+      "location": "Chicago",
+      "salary": "$70,000 - $90,000",
+      "applyBy": "May 30, 2023",
+      "jobType": "Full-time",
+      "isRemote": false,
+      "companyLogo": "https://www.citypng.com/public/uploads/preview/-11595979050wpppgb7y0c.png",
+      "jobDescription": "We are looking for a talented UX/UI designer to join our team in Chicago. The ideal candidate will have 2-4 years of experience in designing user interfaces for web and mobile applications, using tools such as Sketch, Figma or Adobe XD. In this role, you will be responsible for creating wireframes, prototypes and high-fidelity designs that meet our users' needs and align with our brand guidelines, collaborating with product managers and developers to deliver intuitive and delightful user experiences."
+    },
+    {
+      "id": 4,
+      "company": "Amazon",
+      "position": "DevOps Engineer",
+      "experience": "3-5 years",
+      "location": "Seattle",
+      "salary": "$90,000 - $110,000",
+      "applyBy": "June 15, 2023",
+      "jobType": "Remote",
+      "isRemote": true,
+      "companyLogo": "https://w7.pngwing.com/pngs/911/623/png-transparent-amazon-com-amazon-alexa-retail-amazon-prime-order-fulfillment-amazon-miscellaneous-company-text.png",
+      "jobDescription": "'We are looking for a talented DevOps engineer to join our remote"
+    },
+    {
+        "id": 5,
+        "company": "Microsoft",
+        "position": "Full Stack Developer",
+        "experience": "5-7 years",
+        "location": "Redmond",
+        "salary": "$120,000 - $140,000",
+        "applyBy v": "June 30, 2023",
+        "jobType": "Full-time",
+        "companyLogo": "https://www.weehooey.com/wp-content/uploads/2022/04/Microsoft-Logo-PNG.png",
+        "jobDescription": "We are seeking a talented Full Stack Developer to join our team in Redmond. The ideal candidate will have experience with JavaScript, React, Node.js, and MongoDB. You will be responsible for developing, testing, and maintaining web applications for our clients."
+        },
+        {
+        "id": 6,
+        "company": "Apple",
+        "position": "iOS Developer",
+        "experience": "3-5 years",
+        "location": "Cupertino",
+        "salary": "$100,000 - $120,000",
+        "applyBy": "July 15, 2023",
+        "jobType": "Remote",
+        "companyLogo": "https://cdn.freebiesupply.com/logos/thumbs/2x/apple-logo.png",
+        "jobDescription": "We are looking for an experienced iOS Developer to join our team in Cupertino. The ideal candidate will have experience with Swift, Objective-C, and Xcode. You will be responsible for developing, testing, and maintaining our iOS applications."
+        }
+]
+  

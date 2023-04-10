@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Img from '../../assets/All Images/P3OLGJ1 copy 1.png'
 import { useLoaderData } from 'react-router-dom';
 import Categorycard from '../CategoryCard/Categorycard';
+import JobCatagoriCard from '../JobCatagoriCard/JobCatagoriCard';
 
 const Home = () => {
-    const data = useLoaderData()
-    
+    const jobcstogori = useLoaderData()
+   
+   const [data ,setData] =useState([])
+   useEffect( () =>{
+    fetch(`jobCatagory.json`)
+    .then(res => res.json())
+     .then(data => setData(data))
+   },[])
+    // console.log(jobcstogori);
     return (
         <div>
             {/* banner section */}
@@ -31,6 +39,21 @@ const Home = () => {
                 {
                     data.map(infos => <Categorycard  key={infos.id} infos={infos}/>)
                 }
+                </div>
+            </section>
+
+            {/* Job circuler section */}
+            <section className='mt-40'>
+                <div>
+                    <h5 className='text-2xl font-bold'>Job Circular</h5>
+                    <p className='text-gray-500 text-sm mt-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+
+                    <div className='grid md:grid-cols-2 grid-cols-1 gap-10 mx-auto md:w-3/5 mt-6'>
+                        {
+                            jobcstogori.map(jData => <JobCatagoriCard  key={jData.id} jData={jData}/>)
+                        }
+                    </div>
+                    <div><button className='btn-primary'>See All Jobs</button></div>
                 </div>
             </section>
         </div>
