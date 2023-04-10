@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Categorycard = ({infos}) => {
-    console.log(infos);
+  
     const {title,description,image} = infos
     return (
         <>

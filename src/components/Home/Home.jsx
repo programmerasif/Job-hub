@@ -4,6 +4,8 @@ import { useLoaderData } from 'react-router-dom';
 import Categorycard from '../CategoryCard/Categorycard';
 import JobCatagoriCard from '../JobCatagoriCard/JobCatagoriCard';
 
+
+
 const Home = () => {
     const jobcstogori = useLoaderData()
    
@@ -13,7 +15,7 @@ const Home = () => {
     .then(res => res.json())
      .then(data => setData(data))
    },[])
-    // console.log(jobcstogori);
+  
     return (
         <div>
             {/* banner section */}
@@ -50,12 +52,13 @@ const Home = () => {
 
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-10 mx-auto md:w-3/5 mt-6'>
                         {
-                            jobcstogori.map(jData => <JobCatagoriCard  key={jData.id} jData={jData}/>)
+                            jobcstogori && jobcstogori.map(jData => <JobCatagoriCard  key={jData.id} jData={jData} />)
                         }
                     </div>
                     <div><button className='btn-primary'>See All Jobs</button></div>
                 </div>
             </section>
+            
         </div>
     );
 };

@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const JobCatagoriCard = ({jData}) => {
-    console.log(jData);
-    const {companyLogo,company,position,jobType,location,salary} = jData
+    
+    const {companyLogo,company,position,jobType,location,salary,id} = jData
     return (
         <div className='flex justify-start items-center bg-gray-100 p-8 rounded '>
             <div className='text-start'>
@@ -17,7 +18,9 @@ const JobCatagoriCard = ({jData}) => {
                 <p>location : {location}</p>
                 <p>Salary : {salary}</p>
             </div>
-            <button className='btn-primary'>View Details</button>
+            <button className='btn-primary'>
+                <Link to={`/jobDetils/${id}`}>View Details</Link>
+            </button>
             </div>
         </div>
     );

@@ -13,6 +13,7 @@ import Statistics from './components/Statistics/Statistics';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blog from './components/Blog/Blog';
 import JobCatagoriCard from './components/JobCatagoriCard/JobCatagoriCard';
+import JobDetils from './components/JobDetils/JobDetils';
 
 const router = createBrowserRouter([
   {
@@ -26,20 +27,32 @@ const router = createBrowserRouter([
         loader: () => fetch(`jobcirculer.json`)
       },
       {
-        path: '/statistics',
+        path: 'jobDetils/:detilId',
+        element: <JobDetils />,
+        loader: ({params}) => {
+          
+          const data = fetch(`jobcirculer.json`);
+          
+          return data
+
+        }
+        // return[,fac]
+      },
+      {
+        path: 'statistics',
         element: <Statistics />
       },
       {
-        path: '/appliedJobs',
+        path: 'appliedJobs',
         element: <AppliedJobs />
       },
       {
-        path: '/blog',
+        path: 'blog',
         element: <Blog />
         
       },
       {
-        path: '/JobCatagoriCard',
+        path: 'JobCatagoriCard',
         element: <JobCatagoriCard />
       }
     ],
