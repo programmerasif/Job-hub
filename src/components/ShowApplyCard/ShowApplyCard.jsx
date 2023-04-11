@@ -1,9 +1,10 @@
 import React from 'react';
 import { MapPinIcon,CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 const ShowApplyCard = ({data}) => {
     console.log(data);
-    const {companyLogo,position,company,jobType,location,salary} = data
+    const {companyLogo,position,company,jobType,location,salary,id} = data
     return (
         <div className='flex justify-between items-center bg-gray-50 mb-5 p-10 rounded border border-gray-200'>
             <div className='flex justify-center items-center mx-auto md:w-3/4  gap-10'>
@@ -20,7 +21,7 @@ const ShowApplyCard = ({data}) => {
                 </div>
             </div>
             <div>
-                <button className='btn-primary'>View Details</button>
+                <button className='btn-primary'><Link to={`/jobDetils/${id}`}>View Details</Link></button>
             </div>
         </div>
     );

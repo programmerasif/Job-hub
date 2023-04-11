@@ -36,7 +36,7 @@ const router = createBrowserRouter([
           return data
 
         }
-        // return[,fac]
+        
       },
       {
         path: 'statistics',
