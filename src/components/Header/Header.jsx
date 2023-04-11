@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
             <header className='bg-sky-100 p-5'>
             <nav className='container'>
                 <div>
-                    <h5 className='text-xl font-bold'>JobCircularHub</h5>
+                    <Link to='/'><h5 className='text-xl font-bold'>JOB_CIRCULAR_HUB</h5></Link>
                 </div>
                 <div className='lg:flex items-center hidden'>
                     <div className='md:bg-none mr-40 container gap-5 text-sm text-gray-600 font-semibold'>

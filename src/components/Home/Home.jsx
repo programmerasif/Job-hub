@@ -16,14 +16,6 @@ const Home = () => {
      .then(db =>  setData(db))
    },[])
   
-   
-//    const seeAll =()=>{
-//     setseeAll(!isSeeAll)
-    
-//   }
-//  console.log(isSeeAll);
-
-  
     return (
         <div>
             {/* banner section */}
