@@ -10,7 +10,7 @@ const Header = () => {
     }
     return (
         <>
-            <header className='bg-purple-50 p-5'>
+            <header className='bg-sky-100 p-5'>
             <nav className='container'>
                 <div>
                     <h5 className='text-xl font-bold'>JobCircularHub</h5>
@@ -44,7 +44,7 @@ const Header = () => {
                         }
                 </div>
 
-                <div className={`gap-2 w-60 flex flex-col lg:hidden absolute left-64 text-start text-sm font-semibold bg-white rounded p-5 ${isOpen ==true ? 'top-16 duration-300': '-top-36 duration-300'}`}>
+                <div className={`gap-2 w-60 flex flex-col lg:hidden absolute left-16 text-start text-sm font-semibold bg-white rounded p-5 ${isOpen ==true ? 'top-16 duration-300': '-top-36 duration-300'}`}>
                     <NavLink to="/" className={({ isActive }) => isActive ? 'text-sky-300' : 'default:'}>
                             Home
                     </NavLink>

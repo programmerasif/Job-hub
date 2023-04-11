@@ -21,55 +21,55 @@ const Statistics = () => {
         name: 'Assignment-1',
         Full_marks: 6,
         Datication: 100,
-        marks: 60,
+        Get_marks: 60,
       },
       {
         name: 'Assignment-2',
         Full_marks: 60,
         Datication: 100,
-        marks: 60,
+        Get_marks: 60,
       },
       {
         name: 'Assignment-3',
         Full_marks: 60,
         Datication: 100,
-        marks: 60,
+        Get_marks: 60,
       },
       {
         name: 'Assignment-4',
         Full_marks: 60,
         Datication: 100,
-        marks: 60,
+        Get_marks: 60,
       },
       {
         name: 'Assignment-5',
         Full_marks: 60,
         Datication: 100,
-        marks: 60,
+        Get_marks: 60,
       },
       {
         name: 'Assignment-6',
         Full_marks: 60,
         Datication: 100,
-        marks: 57,
+        Get_marks: 57,
       },
       {
         name: 'Assignment-7',
         Full_marks: 60,
         Datication: 100,
-        marks: 60,
+        Get_marks: 60,
       },
       {
         name: 'Assignment-8',
         Full_marks: 60,
         Datication: 100,
-        marks: 60,
+        Get_marks: 60,
       },
     ];
     
 
     return (
-        <div className='flex justify-center items-center h-[80vh]'>
+        <div className='flex justify-center items-center h-screen bg-sky-50'>
             <div style={{ width: '100%', height: 300 }}>
           <ResponsiveContainer>
             <ComposedChart
@@ -88,7 +88,7 @@ const Statistics = () => {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Area type="monotone" dataKey="marks" fill="#8884d8" stroke="#8884d8" />
+              <Area type="monotone" dataKey="Get_marks" fill="#8884d8" stroke="#8884d8" />
               <Bar dataKey="Datication" barSize={20} fill="#413ea0" />
               <Line type="monotone" dataKey="Full_marks" stroke="#ff7300" />
             </ComposedChart>

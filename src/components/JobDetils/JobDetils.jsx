@@ -30,7 +30,7 @@ const JobDetils = () => {
                 <p>  <span className='text-2xl font-bold'>Job Exprience :</span><br />{experience}</p>
             </div>
             <div className='md:w-[45%] sm:w-[100] text-start  '>
-                <div className='flex flex-col justify-center items-start rounded bg-purple-100 md:w-1/2 sm:w-screen p-10'>
+                <div className='flex flex-col justify-center items-start rounded bg-sky-100 md:w-1/2 sm:w-screen p-10'>
                     <h3 className='text-2xl font-bold'>Job Detils</h3>
                     <hr className='text-2xl font-bold'/>
                     <br />
@@ -44,7 +44,7 @@ const JobDetils = () => {
                     <p className='text-sm text-gray-500'><span className='text-black'>Phone : </span>01750-** 00 *0</p>
                     <p className='text-sm text-gray-500'><span className='text-black'>Email :</span> info@gmail.com</p>
                     <p className='text-sm text-gray-500'><span className='text-xl font-semibold'><span className='text-black'>Address :</span></span>{singleData.location}</p>
-                    <button className='btn-primary w-[100%] mt-10' onClick={handeldata}><Link to="/">Apply Now</Link></button>
+                    <Link to="/"> <button className='btn-primary w-[100%] mt-10' onClick={handeldata}>Apply Now</button></Link>
                 </div>
             </div>
         </div>
