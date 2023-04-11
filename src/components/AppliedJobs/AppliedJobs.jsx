@@ -5,7 +5,7 @@ import ShowApplyCard from '../ShowApplyCard/ShowApplyCard';
 
 const AppliedJobs = () => {
     const [allDatas,setAllData] = useState([])
-    const [singldb, setsingldb] = useState([])
+    const [singledb, setsingldb] = useState([])
     // const[onside ,setOnside] = useState([])
     useEffect(() =>{
          const applied = getShoppingCart()
@@ -20,18 +20,18 @@ const AppliedJobs = () => {
                 data.push(db.find( d => d.id == id))
             })
             setAllData(...allDatas,data)
-            setsingldb(...singldb,data)
+            setsingldb(...singledb,data)
          })},[])
 
 
 
 const remotjob = () =>{
     const remotdata = allDatas.filter(d => d.jobType == 'Remote')
-    setAllData(remotdata) 
+    setsingldb(remotdata) 
 }
 const insideJob = () =>{
     const indordata = allDatas.filter(d => d.jobType != 'Remote')
-    setAllData(indordata);  
+    setsingldb(indordata);  
 }
 
 
@@ -45,7 +45,7 @@ const insideJob = () =>{
             {
                 
 
-                allDatas.map(data => <ShowApplyCard data={data} key={data.id} />)
+                singledb.map(data => <ShowApplyCard data={data} key={data.id} />)
             }
         </div>
     );

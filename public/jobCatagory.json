@@ -3,25 +3,25 @@
         "id": "1",
         "title": "Account",
         "description": "150+ jobs available",
-        "image": "../src/assets/Icons/accounts 1.png"
+        "image": "https://i.ibb.co/hWZHxFn/accounts-1.png"
     },
     {
       "id": "2", 
       "title": "Creativity",
       "description": "300+ jobs available",
-      "image": "../src/assets/Icons/business 1.png"
+      "image": "https://i.ibb.co/kX0khk1/business-1.png"
     },
     {
      "id": "3",
       "title": "Programing",
       "description": "350+ jobs available",
-      "image": "../src/assets/Icons/chip 1.png"
+      "image": "https://i.ibb.co/6ZF1SgS/chip-1.png"
     },
     {
-        "id": "24", 
+        "id": "4", 
         "title": "Marketing",
         "description": "400+ jobs available",
-        "image": "../src/assets/Icons/social-media 1.png"
+        "image": "https://i.ibb.co/C51WvN2/social-media-1.png"
     }  
     
   ]

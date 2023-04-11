@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from '../fakeDb/fakedb';
 
 
@@ -23,7 +23,7 @@ const JobDetils = () => {
    const {jobDescription,responsibility,education,experience,salary,position} = singleData
     return (
         <div className='sm:flex-row md:flex justify-center items-center md:w-4/5 sm:w-screen p-8 mx-auto h-[80vh]'>
-            <div className='md:w-[55%] sm:w-[100] text-start md:mb-0 sm:mb-10'>
+            <div className='md:w-[55%] sm:w-[100] text-start md:mb-0 sm:mb-10 '>
                 <h3 className='mb-7 text-sm'><span className='text-2xl font-bold'>Job Description :</span> {jobDescription}</h3>
                 <h3 className='mb-7'> <span className='text-2xl font-bold '>Job Responsibility:</span>{responsibility}</h3>
                 <h3 className='mb-7'><span className='text-2xl font-bold'>Educational Requirements:</span> <br />{education}</h3>
@@ -44,7 +44,7 @@ const JobDetils = () => {
                     <p className='text-sm text-gray-500'><span className='text-black'>Phone : </span>01750-** 00 *0</p>
                     <p className='text-sm text-gray-500'><span className='text-black'>Email :</span> info@gmail.com</p>
                     <p className='text-sm text-gray-500'><span className='text-xl font-semibold'><span className='text-black'>Address :</span></span>{singleData.location}</p>
-                    <button className='btn-primary w-[100%] mt-10' onClick={handeldata}>Apply Now</button>
+                    <button className='btn-primary w-[100%] mt-10' onClick={handeldata}><Link to="/">Apply Now</Link></button>
                 </div>
             </div>
         </div>
