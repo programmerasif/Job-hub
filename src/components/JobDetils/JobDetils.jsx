@@ -22,15 +22,15 @@ const JobDetils = () => {
 
    const {jobDescription,responsibility,education,experience,salary,position} = singleData
     return (
-        <div className='flex justify-center items-center w-4/5 mx-auto h-[80vh]'>
-            <div className='md:w-[55%] text-start'>
+        <div className='sm:flex-row md:flex justify-center items-center md:w-4/5 sm:w-screen p-8 mx-auto h-[80vh]'>
+            <div className='md:w-[55%] sm:w-[100] text-start md:mb-0 sm:mb-10'>
                 <h3 className='mb-7 text-sm'><span className='text-2xl font-bold'>Job Description :</span> {jobDescription}</h3>
                 <h3 className='mb-7'> <span className='text-2xl font-bold '>Job Responsibility:</span>{responsibility}</h3>
                 <h3 className='mb-7'><span className='text-2xl font-bold'>Educational Requirements:</span> <br />{education}</h3>
                 <p>  <span className='text-2xl font-bold'>Job Exprience :</span><br />{experience}</p>
             </div>
-            <div className='md:w-[45%] text-start  '>
-                <div className='flex flex-col justify-center items-start rounded bg-purple-100 w-1/2 p-10'>
+            <div className='md:w-[45%] sm:w-[100] text-start  '>
+                <div className='flex flex-col justify-center items-start rounded bg-purple-100 md:w-1/2 sm:w-screen p-10'>
                     <h3 className='text-2xl font-bold'>Job Detils</h3>
                     <hr className='text-2xl font-bold'/>
                     <br />

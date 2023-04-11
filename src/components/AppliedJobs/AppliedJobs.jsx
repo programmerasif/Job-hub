@@ -5,6 +5,8 @@ import ShowApplyCard from '../ShowApplyCard/ShowApplyCard';
 
 const AppliedJobs = () => {
     const [allDatas,setAllData] = useState([])
+    const [singldb, setsingldb] = useState([])
+    // const[onside ,setOnside] = useState([])
     useEffect(() =>{
          const applied = getShoppingCart()
          const applyedId = Object.keys(applied)
@@ -18,13 +20,32 @@ const AppliedJobs = () => {
                 data.push(db.find( d => d.id == id))
             })
             setAllData(...allDatas,data)
+            setsingldb(...singldb,data)
          })},[])
 
-    console.log(allDatas);
+
+
+const remotjob = () =>{
+    const remotdata = allDatas.filter(d => d.jobType == 'Remote')
+    setAllData(remotdata) 
+}
+const insideJob = () =>{
+    const indordata = allDatas.filter(d => d.jobType != 'Remote')
+    setAllData(indordata);  
+}
+
+
+
     return (
         <div className='mt-10 mx-auto md:w-2/4'>
+            <div className='flex justify-end gap-6 mb-5'>
+            <button className='border border-gray-500 px-6 py-2 rounded' onClick={remotjob}>remot</button>
+            <button className='border border-gray-500 px-6 py-2 rounded' onClick={insideJob} >inside</button>
+        </div>
             {
-                allDatas.map(data => <ShowApplyCard data={data}/>)
+                
+
+                allDatas.map(data => <ShowApplyCard data={data} key={data.id} />)
             }
         </div>
     );

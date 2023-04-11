@@ -8,13 +8,21 @@ import JobCatagoriCard from '../JobCatagoriCard/JobCatagoriCard';
 
 const Home = () => {
     const jobcstogori = useLoaderData()
-   
+    const [isSeeAll,setseeAll] =useState(true)
    const [data ,setData] =useState([])
    useEffect( () =>{
     fetch(`jobCatagory.json`)
     .then(res => res.json())
-     .then(data => setData(data))
+     .then(db =>  setData(db))
    },[])
+  
+   
+//    const seeAll =()=>{
+//     setseeAll(!isSeeAll)
+    
+//   }
+//  console.log(isSeeAll);
+
   
     return (
         <div>
@@ -45,17 +53,19 @@ const Home = () => {
             </section>
 
             {/* Job circuler section */}
-            <section className='mt-40'>
+            <section className='mt-40 mb-10'>
                 <div>
                     <h5 className='text-2xl font-bold'>Job Circular</h5>
                     <p className='text-gray-500 text-sm mt-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-10 mx-auto md:w-3/5 mt-6'>
                         {
-                            jobcstogori && jobcstogori.map(jData => <JobCatagoriCard  key={jData.id} jData={jData} />)
+                           isSeeAll==true? jobcstogori.slice(0,4).map(jData => <JobCatagoriCard  key={jData.id} jData={jData} />): jobcstogori.map(jData => <JobCatagoriCard  key={jData.id} jData={jData} />)
                         }
                     </div>
-                    <div><button className='btn-primary'>See All Jobs</button></div>
+                    <div className='mt-10'>
+                        <button className={`btn-primary ${!isSeeAll && 'hidden'}`} onClick={() =>setseeAll(!isSeeAll)}>See All Jobs</button>
+                    </div>
                 </div>
             </section>
             
