@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
      <Header />
+     <div className='min-h-[calc(100vh-150px)]'>
      <Outlet />
-     <div className='flex mt-40'>
-     <Footer />
      </div>
+     <Footer />
     </div>
   )
 }

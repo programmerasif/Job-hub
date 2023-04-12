@@ -23,16 +23,19 @@ const JobDetils = () => {
 
    const {jobDescription,responsibility,education,experience,salary,position} = singleData
     return (
-        <div className='sm:flex-row md:flex justify-center items-center md:w-4/5 sm:w-screen p-8 mx-auto h-[80vh]'>
-            <div className='md:w-[55%] sm:w-[100] text-start md:mb-0 sm:mb-10 '>
-                <h3 className='mb-7 text-sm'><span className='text-2xl font-bold'>Job Description :</span> {jobDescription}</h3>
+        <div >
+            <div className='grid md:grid-cols-2 sm:grid-cols-1 items-center justify-around w-4/5 mx-auto mt-8 gap-10 sm:p-1 md:p-10'>
+
+            <div className='text-start'>
+                <h3 className='mb-7 text-sm '><span className='text-2xl font-bold'>Job Description :</span> {jobDescription}</h3>
                 <h3 className='mb-7'> <span className='text-2xl font-bold '>Job Responsibility:</span>{responsibility}</h3>
                 <h3 className='mb-7'><span className='text-2xl font-bold'>Educational Requirements:</span> <br />{education}</h3>
                 <p>  <span className='text-2xl font-bold'>Job Exprience :</span><br />{experience}</p>
             </div>
-            <div className='md:w-[45%] sm:w-[100] text-start  '>
-                <div className='flex flex-col justify-center items-start rounded bg-sky-100 md:w-[60%] sm:w-screen p-10'>
-                    <h3 className='text-2xl font-bold'>Job Detils</h3>
+
+            {/* second div */}
+            <div className=' text-start  md:w-1/2 sm:w-screen bg-sky-50 p-6'>
+            <h3 className='text-2xl font-bold'>Job Detils</h3>
                     <hr className='text-2xl font-bold'/>
                     <br />
                     <div>
@@ -46,7 +49,8 @@ const JobDetils = () => {
                     <p className='text-sm text-gray-500'><span className='text-black'> <AtSymbolIcon className=" inline mr-2 h-5 w-5 text-blue-500" />Email :</span> info@gmail.com</p>
                     <p className='text-sm text-gray-500'><span className='text-xl font-semibold'><span className='text-black'> <MapPinIcon className=" inline mr-2 h-5 w-5 text-blue-500" />Address :</span></span>{singleData.location}</p>
                     <Link to="/"> <button className='btn-primary w-[100%] mt-10' onClick={handeldata}>Apply Now</button></Link>
-                </div>
+            </div>
+
             </div>
         </div>
     );

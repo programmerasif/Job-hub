@@ -22,8 +22,6 @@ const AppliedJobs = () => {
             setsingldb(...singledb,data)
          })},[])
 
-
-
 const remotjob = () =>{
     const remotdata = allDatas.filter(d => d.jobType == 'Remote')
     setsingldb(remotdata) 
@@ -34,13 +32,12 @@ const insideJob = () =>{
 }
 
 
-console.log(singledb);
+
     return (
 
         
         <>
-
-             <div>
+            <div>
                <div>{singledb.length == false ? <h5 className='bg-sky-100 p-6 flex items-center justify-center gap-10 text-2xl font-bold mb-10 mt-10'>No Application Availabal</h5> : <h5 className='bg-sky-100 p-6 flex items-center justify-center gap-10 text-2xl font-bold mb-10 mt-10'>There are {singledb.length} Job Applications</h5>}
                <hr className='border border-gray-200' /></div>
              </div>

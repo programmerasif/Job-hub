@@ -1,0 +1,67 @@
+<div className='grid md:grid-cols-5 sm:grid-cols-1 sm:items-start sm:justify-start md:text-start sm:w-[100%] md:w-4/5 mx-auto text-white p-10 gap-10'>
+                <div>
+                    <h3 className=' '>CareerHub</h3>
+                    <p >There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
+                    <div>
+                        <img src={Image} alt=""  className=''/>
+                    </div>
+                </div>
+
+                <div className='sm:w-[100%] mb-10'>
+                    <h3 className='md:mb-8 text-2xl font-semibold'>Company</h3>
+                    <p className='md:mb-4 sm:mb-4'>About us</p>
+                    <p className='md:mb-4 sm:mb-4'>Work</p>
+                    <p className='md:mb-4 sm:mb-4'>Latest News</p>
+                    <p className='md:mb-4 sm:mb-4'>Careers</p>
+                </div>
+
+                <div>
+                    <h3 className='md:mb-8 sm:mb-4 text-2xl font-semibold'>Support</h3>
+                    <p className='md:mb-4 sm:mb-4'>Help Desk</p>
+                    <p className='md:mb-4 sm:mb-4'>Sales</p>
+                    <p className='md:mb-4 sm:mb-4'>Become a Partner</p>
+                    <p className='md:mb-4 sm:mb-4'>Developers</p>
+                </div>
+
+                <div>
+                    <h3 className='md:mb-8 sm:mb-6 text-2xl font-semibold'> Product</h3>
+                    <p className='md:mb-4 sm:mb-1'>Prototype</p>
+                    <p className='md:mb-4 sm:mb-1'>Plans & Pricing</p>
+                    <p className='md:mb-4 sm:mb-1'>Customers</p>
+                    <p className='md:mb-4 sm:mb-4'>Integrations</p>
+                </div>
+                <div>
+                    <h3 className='md:mb-8 sm:mb-4 text-2xl font-semibold'>Contact</h3>
+                    <p className='md:mb-4 sm:mb-4'>524 Broadway , NYC</p>
+                    <p>+1 777 - 978 - 5570</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            /////
+
+            <div>
+                    <h3 className='text-2xl font-bold'>Job Detils</h3>
+                    <hr className='text-2xl font-bold'/>
+                    <br />
+                    <div>
+                        <p className='text-sm text-gray-500'><span className='text-xl font-semibold text-black'> <CurrencyDollarIcon className=" inline mr-2 h-5 w-5 text-blue-500" />Salary :</span>{salary}</p>
+                        <p className='text-sm text-gray-500'><span className='text-xl font-semibold text-black'> <CalendarDaysIcon className=" inline mr-2 h-5 w-5 text-blue-500" />Job Title :</span> {position}</p>
+                    </div>
+                    <br />
+                    <h3 className='text-xl font-semibold'>Contact Information</h3>
+                    <br />
+                    <p className='text-sm text-gray-500'><span className='text-black'> <PhoneIcon className=" inline mr-2 h-5 w-5 text-blue-500" />Phone : </span>01750-** 00 *0</p>
+                    <p className='text-sm text-gray-500'><span className='text-black'> <AtSymbolIcon className=" inline mr-2 h-5 w-5 text-blue-500" />Email :</span> info@gmail.com</p>
+                    <p className='text-sm text-gray-500'><span className='text-xl font-semibold'><span className='text-black'> <MapPinIcon className=" inline mr-2 h-5 w-5 text-blue-500" />Address :</span></span>{singleData.location}</p>
+                    <Link to="/"> <button className='btn-primary w-[100%] mt-10' onClick={handeldata}>Apply Now</button></Link>
+                </div>
